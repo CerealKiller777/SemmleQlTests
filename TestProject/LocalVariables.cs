@@ -9,7 +9,11 @@ namespace TestProject
         public void LocalVariableShouldBeConstant()
         {
             // ReSharper disable once ConvertToConstant.Local
+            // ReSharper disable once RedundantAssignment
+            // ReSharper disable once InlineOutVariableDeclaration
             ulong localVariable = 7;
+            const string c_logAsString = "7";
+            _ = ulong.TryParse(c_logAsString, out localVariable);
             Console.WriteLine(localVariable);
         }
     }
