@@ -13,6 +13,7 @@ namespace TestProject
             // ReSharper disable once InlineOutVariableDeclaration
             ulong localVariable = 7;
             const string c_logAsString = "7";
+            // ReSharper disable once AssignmentIsFullyDiscarded
             _ = ulong.TryParse(c_logAsString, out localVariable);
             Console.WriteLine(localVariable);
         }
