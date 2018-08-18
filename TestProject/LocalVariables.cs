@@ -16,6 +16,7 @@ namespace TestProject
             // ReSharper disable once AssignmentIsFullyDiscarded
             _ = ulong.TryParse(c_logAsString, out localVariable);
             Console.WriteLine(localVariable);
+            // test
         }
     }
 }
